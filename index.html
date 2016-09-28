@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My Weather App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="home">
+            <div data-role="header">
+                <h1>My Weather App</h1>
+                <a href="a" data-icon="recycle" class="ui-btn ui-btn-right ui-shadow ui-corner-all ui-icon-recycle ui-btn-icon-right" id='refresh'>Refresh</a>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-count-theme="b" data-inset="true" id='list'>
+                    
+<!--
+                    <li><a href="details.html">Station name 1<span class="ui-li-count">12</span></a></li>
+                    <li><a href="details.html">Station name 2<span class="ui-li-count">3</span></a></li>
+-->
+                </ul>
+            </div>
+            <div data-role="footer">
+                <h1>My Footer</h1>
+            </div>
+        </div>        
+        
+        <div data-role="page" id="details">
+            <div data-role="header" data-add-back-btn="true">
+                <h1>Setation Details</h1>
+                <a href="a" data-icon="recycle" class="ui-btn ui-btn-right ui-shadow ui-corner-all ui-icon-recycle ui-btn-icon-right">Refresh</a>
+            </div>
+            <div data-role="content">
+        <!--
+                <img id='stationIcon'>
+              <h4 id='stationName'></h4>
+              <ul data-role='listview'>
+                  <li id='stationDescription'></span></li>
+                  <li id='stationTemp'></span></li>
+
+              </ul>
+        -->
+                <img id="stationIcon">
+                <h4 id="stationName"></h4>
+                <ul data-role="listview" data-inset="True">
+                    <li id="stationDescription"></li>
+                    <li id="stationTemp"></li>
+                    <li id="stationHumidity"></li>
+                    <li id="stationPressure"></li>
+
+                </ul>
+            </div>
+
+
+        </div>
+        <script src="mycode.js"></script>
+    </body>
+</html>
